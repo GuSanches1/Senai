@@ -1,0 +1,76 @@
+      section#sec1 {
+        background-color: azure;
+      }
+      .foto {
+        width: 500px;
+        height: auto;
+        border-radius: 400px;
+        transition: filter 1s ease-in-out;
+        /*filter: drop-shadow(0 0 1rem black)*/
+        /*box-shadow: 10px 10px 20px black;*/
+      }
+      .foto:hover{
+       transition: border-radius 1s ease;
+       border-radius: 50px;
+       filter: drop-shadow(0 0 1rem black);
+      }
+
+      .titulo{
+        font-style: oblique;
+        font-weight: 1000;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+      }
+      body{
+        background-color: cadetblue;
+      }
+      .lista{
+        text-align: left;
+      }
+      a{
+        color: black;/*cor da letra*/
+        text-decoration: none;/*tirar a linha do link, linha embaixo da letra*/
+        font-weight: bold;/*negrito*/
+        transition: color 0.5s ease;
+      }
+      a:hover{
+        color: cornflowerblue;
+      }
+     section#sec2{
+        background-color: bisque;
+     }
+     .section {
+        text-align: center;
+        border: 3px solid black;
+        width: 1200px;
+        height: 1000px;
+        margin: 50px 20px 20px 350px;
+        border-radius: 100px;
+     }
+     img#foto2{
+        width: 900px;
+        height: 500px;
+        border-radius: 300px;
+        transition: filter 1s ease-in-out;
+     }
+     img#foto2:hover{
+       transition: border-radius 2s ease;
+       border-radius: 50px;
+       filter: drop-shadow(0 0 1rem black);
+     }
+     section#sec1{
+        background-color: ivory;
+     }
+     section#sec3{
+        background-color: rgb(255,160,122);
+        height: 750px;
+     }
+     section#sec4{
+        background-color: rgb(255,192,203);
+        height: 850px;
+     }
+     section#sec5{
+        background-color: rgb(220,220,220);
+        height: 820px;
+     }
+     
