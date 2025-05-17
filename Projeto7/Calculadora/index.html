@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" type="text/JavaScript" defer></script>
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="fundo">
+      <h1>Calculadora</h1>
+      <hr />
+      <div class="corpoCalc">
+        <p id="resultado"></p>
+      </div>
+      <!--fim corpoCalc-->
+      <!-- Tabela para numeros e operações-->
+      <table>
+        <!-- linha1 -->
+        <tr>
+          <!-- Botão "C" chama a Função para limpar a tela da calculadora -->
+          <td><button class="btn" onclick="clean()">C</button></td>
+          <!-- BOtão de voltar '>' apaga o ultimo digito (n°) -->
+          <td><button class="btn" onclick="del()"><</button></td>
+          <!-- Botão divisao '/' insere o caractere '/' -->
+          <td><button class="btn" onclick="insert('/')">/</button></td>
+          <!-- botão divisao '*' insere o caractere "*" chamando a função. -->
+          <td><button class="btn" onclick="insert('*')">*</button></td>
+        </tr>
+        <!--final linha 1-->
+        <!-- linha2 -->
+        <tr>
+          <!-- Botão "7" o que insere o numero na tela da calculadora -->
+          <td><button class="btn" onclick="insert('7')">7</button></td>
+          <!-- BOtão '8' que insere o nº 8 na tela da calculadora -->
+          <td><button class="btn" onclick="insert('8')">8</button></td>
+          <!-- Botão '9' que insere o nº 9 na tela da calculadora -->
+          <td><button class="btn" onclick="insert('9')">9</button></td>
+          <!-- botão '-" insere o caractere '-' chamando a função.-->
+          <td><button class="btn" onclick="insert('-')">-</button></td>
+        </tr>
+        <!--final da linha 2-->
+
+        <!-- linha3 -->
+        <tr>
+          <!-- Botão "4" o que insere o numero 4 na tela da calculadora -->
+          <td><button class="btn" onclick="insert('4')">4</button></td>
+          <!-- BOtão '5' que insere o nº 5 na tela da calculadora -->
+          <td><button class="btn" onclick="insert('5')">5</button></td>
+          <!-- Botão '6' que insere o nº 6 na tela da calculadora -->
+          <td><button class="btn" onclick="insert('6')">6</button></td>
+          <!-- botão '+" insere o caractere '+' chamando a função.-->
+          <td><button class="btn" onclick="insert('+')">+</button></td>
+        </tr>
+        <!--final da linha 3-->
+
+        <!-- linha4 -->
+        <tr>
+          <!-- Botão "1" o que insere o numero 1 na tela da calculadora -->
+          <td><button class="btn" onclick="insert('1')">1</button></td>
+          <!-- BOtão '5' que insere o nº 3 na tela da calculadora -->
+          <td><button class="btn" onclick="insert('2')">2</button></td>
+          <!-- Botão '6' que insere o nº 3 na tela da calculadora -->
+          <td><button class="btn" onclick="insert('3')">3</button></td>
+          <!-- botão '+" insere o caractere '=' chamando a função calcular ()-->
+          <td rowspan="2">
+            <button class="btn" style="height: 100px" onclick="calcular()">
+              =
+            </button>
+          </td>
+        </tr>
+        <!--final da linha 4-->
+
+        <!-- linha5 -->
+        <tr>
+          <!-- Botão "0" o que insere o numero 0 na tela da calculadora -->
+          <td colspan="2">
+            <button class="btn" style="width: 95px" onclick="insert('0')">
+              0
+            </button>
+          </td>
+          <!-- BOtão '.' que insere o ponto como separador decimal na tela da calculadora-->
+          <td><button class="btn" onclick="">.</button></td>
+        </tr>
+        <!--final da linha 5-->
+      </table>
+    </div>
+    <!--fundo-->
+  </body>
+</html>
